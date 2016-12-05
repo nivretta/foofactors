@@ -23,6 +23,7 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 ### Installation
 
 ```{r installation, eval = FALSE}
+library("devtools")
 devtools::install_github("jennybc/foofactors")
 ```
   
