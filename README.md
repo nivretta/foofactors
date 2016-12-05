@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-**NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
+**NOTE: This is a toy package created for expository purposes by Jenny Bryan, and edited by Nivretta Thatra for Stat 545 2016. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
 
 ### foofactors
 
@@ -8,6 +8,7 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 ### Installation
 
 ``` r
+library("devtools")
 devtools::install_github("jennybc/foofactors")
 ```
 
