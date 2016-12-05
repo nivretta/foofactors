@@ -8,4 +8,3 @@
 #' @name foofactors
 #' @docType package
 NULL
-boop
