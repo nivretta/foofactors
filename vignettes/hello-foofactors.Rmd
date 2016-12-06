@@ -13,6 +13,47 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 
 Can we soften some of their sharp edges?
 
+Keeping order of levels via `givenorder()`:
+
+```{r}
+z <- factor(c("b", "c", "a", "e", "b"))
+
+```
+
+Normally the levels will be ordered alphabetically.
+
+```{r}
+factor(z)
+```
+
+Sometimes you'd like to maintain the order levels in which they appear in the data.
+
+```{r}
+givenorder(z)
+```
+
+Change some factors to characters
+
+Check for factors where number of unique values = length, and change to character.
+
+```{r}
+m <- factor(c("a", "b", "c", "d"))
+class(m)
+
+m_character <- character(m)
+class(m_character)
+```
+
+Otherwise print nochange.
+
+```{r}
+n <- factor(c("a", "b", "c", "d", "a"))
+class(n)
+
+character(n)
+
+```
+
 Binding two factors via `fbind()`:
 
 ```{r}
