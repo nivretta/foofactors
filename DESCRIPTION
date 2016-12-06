@@ -18,7 +18,8 @@ Suggests:
     knitr,
     rmarkdown
 Imports:
-    dplyr
+    dplyr,
+    foofactors
 VignetteBuilder: knitr
 URL: https://github.com/nivretta/foofactors
 BugReports: https://github.com/jennybc/foofactors/issues
