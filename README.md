@@ -9,15 +9,67 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 
 ``` r
 library("devtools")
-devtools::install_github("jennybc/foofactors")
+devtools::install_github("nivretta/foofactors")
 ```
 
 ### Quick demo
 
-Binding two factors via `fbind()`:
+### Keeping order of levels via `givenorder()`:
 
 ``` r
 library(foofactors)
+#> 
+#> Attaching package: 'foofactors'
+#> The following object is masked from 'package:base':
+#> 
+#>     character
+z <- factor(c("b", "c", "a", "e", "b"))
+```
+
+Normally the levels will be ordered alphabetically.
+
+``` r
+factor(z)
+#> [1] b c a e b
+#> Levels: a b c e
+```
+
+Sometimes you'd like to maintain the order levels in which they appear in the data.
+
+``` r
+givenorder(z)
+#> [1] b c a e b
+#> Levels: b c a e
+```
+
+### Change some factors to characters
+
+Check for factors where number of unique values = length, and change to character.
+
+``` r
+m <- factor(c("a", "b", "c", "d"))
+class(m)
+#> [1] "factor"
+
+m_character <- character(m)
+class(m_character)
+#> [1] "character"
+```
+
+Otherwise print nochange.
+
+``` r
+n <- factor(c("a", "b", "c", "d", "a"))
+class(n)
+#> [1] "factor"
+
+character(n)
+#> [1] "NOCHANGE"
+```
+
+Binding two factors via `fbind()`:
+
+``` r
 a <- factor(c("character", "hits", "your", "eyeballs"))
 b <- factor(c("but", "integer", "where it", "counts"))
 ```
