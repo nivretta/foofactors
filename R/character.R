@@ -3,7 +3,6 @@
 #' @param n factor
 #' @return tbl_df
 #' @export
-#' @examples
 
 character <- function(n) {
   if (length(unique(n)) == length(n))
@@ -11,4 +10,3 @@ character <- function(n) {
   else
     print("NOCHANGE")
 }
-
