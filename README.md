@@ -8,6 +8,7 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 ### Installation
 
 ``` r
+library(tidyverse)
 library("devtools")
 devtools::install_github("nivretta/foofactors")
 ```
