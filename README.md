@@ -42,7 +42,7 @@ givenorder(z)
 #> Levels: b c a e
 ```
 
-### Change some factors to characters
+### Change some factors to characters via `character()`:
 
 Check for factors where number of unique values = length, and change to character.
 
@@ -66,6 +66,8 @@ class(n)
 character(n)
 #> [1] "NOCHANGE"
 ```
+
+### Jenny's given functions
 
 Binding two factors via `fbind()`:
 
