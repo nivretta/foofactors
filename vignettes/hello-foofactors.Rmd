@@ -16,6 +16,7 @@ Can we soften some of their sharp edges?
 Keeping order of levels via `givenorder()`:
 
 ```{r}
+library(tidyverse)
 library(foofactors)
 z <- factor(c("b", "c", "a", "e", "b"))
 
