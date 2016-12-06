@@ -10,7 +10,7 @@ character(n)
 \item{n}{factor}
 }
 \value{
-tbl_df
+factor or character
 }
 \description{
 Detect factors that should be character because # unique values = length
