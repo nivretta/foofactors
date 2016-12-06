@@ -16,6 +16,7 @@ Can we soften some of their sharp edges?
 Keeping order of levels via `givenorder()`:
 
 ```{r}
+library(foofactors)
 z <- factor(c("b", "c", "a", "e", "b"))
 
 ```
@@ -57,7 +58,7 @@ character(n)
 Binding two factors via `fbind()`:
 
 ```{r}
-library(foofactors)
+
 a <- factor(c("character", "hits", "your", "eyeballs"))
 b <- factor(c("but", "integer", "where it", "counts"))
 ```
