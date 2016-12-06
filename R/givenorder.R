@@ -4,7 +4,6 @@
 #' @param m factor
 #' @return factor
 #' @export
-#' @examples
 
 givenorder <- function(m) {
   factor(m, levels = unique(m))
