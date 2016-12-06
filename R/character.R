@@ -1,7 +1,7 @@
 #' Detect factors that should be character because # unique values = length
 #'
 #' @param n factor
-#' @return tbl_df
+#' @return factor or character
 #' @export
 
 character <- function(n) {
